@@ -1,0 +1,30 @@
+@import './base.css';
+
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.active{
+    color: #1976d2;
+}
+.link:hover{
+    color: #1976d2;
+}
+.link{
+    margin: 7px;
+    font-size: x-large;
+    text-decoration: unset;
+    text-decoration: unset;
+}
+@media (max-width: 400px) {
+    .link{
+        font-size: large;
+    }
+}
+@media (max-width: 300px) {
+    .link{
+        font-size: small;
+    }
+}
