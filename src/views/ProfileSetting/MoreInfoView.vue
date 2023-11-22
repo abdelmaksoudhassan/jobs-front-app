@@ -62,7 +62,7 @@
             label="New password *"
             hint="New Password"
             lazy-rules
-            :rules="[val => val && isValidLength(8,15,val) || 'Invalid password length (8-15)']"
+            :rules="[val => val && isValidLength(8,25,val) || 'Invalid password length (8-25)']"
           />
         </div>
         <div class="col-12 col-sm-5">
