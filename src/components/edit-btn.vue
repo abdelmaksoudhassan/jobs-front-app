@@ -14,7 +14,7 @@
             >
             <q-input dense v-model="text" autofocus @keyup.enter="prompt = false" lazy-rules
                 :rules="[
-                val => val && isValidLength(3,10,val) || 'Invalid Name length (3-10)',
+                val => val && isValidLength(3,25,val) || 'Invalid Name length (3-25)',
                 val => val && onlyLettersAndSpaces(val) || 'Invalid Titles (letters and spaces only)'
                 ]" />
             <q-btn label="Submit" type="submit" style="background: #FF0080; color: white" :loading="loading" />
