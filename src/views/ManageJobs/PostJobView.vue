@@ -13,7 +13,7 @@
           hint="Title"
           lazy-rules
           :rules="[
-              val => val && isValidLength(5,20,val) || 'Invalid Title length (5-20)',
+              val => val && isValidLength(5,25,val) || 'Invalid Title length (5-25)',
               val => val && onlyLettersAndSpaces(val) || 'Invalid Title (letters and spaces only)'
           ]"
         />
