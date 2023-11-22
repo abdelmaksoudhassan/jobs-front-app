@@ -63,7 +63,7 @@
 import { useQuasar } from 'quasar'
 import { ref } from 'vue';
 import axios from '../helpers/axios';
-import { err_Msg } from '../helpers/functions';
+import { err_Msg, get_url } from '../helpers/functions';
 import { isValidEmail } from '../helpers/validators';
 const columns = [
     {
@@ -98,11 +98,8 @@ export default{
             admins,
             email,
             isValidEmail,
+            get_url,
 
-            get_url(avatar){
-              const url = 'https://nodejs-jobs.onrender.com'
-              return avatar ? `${url}/${avatar}` : "https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png"
-            },
             onReset(){
                 email.value = null
             },

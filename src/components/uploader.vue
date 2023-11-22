@@ -43,7 +43,7 @@ const factoryFn = (file) => {
     const {url} = props
     var formData = new FormData();
     formData.append(`${url}`,file[0])
-    axios({requiresAuth: true}).post(`https://nodejs-jobs.onrender.com/${url}`,formData,{
+    axios({requiresAuth: true}).post(`/${url}`,formData,{
         headers: {
             'Content-Type': 'multipart/form-data'
         }

@@ -27,3 +27,8 @@ export function clearToken(){
 export function err_Msg(){
     return 'unexpected error occured !! open console for more info'
 }
+
+export function get_url(avatar){
+    const url = 'https://nodejs-jobs.onrender.com'
+    return avatar ? `${url}/${avatar}` : "https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png"
+}

@@ -51,8 +51,8 @@ export default {
   setup () {
     const $q = useQuasar()
     const router = useRouter()
-    const email = ref(null)
-    const password = ref(null)
+    const email = ref('ahmedhassan@gmail.com')
+    const password = ref('12345678')
     const loading = ref(false)
     const resetBtn = ref(null)
     const authStore = useAuthStore()

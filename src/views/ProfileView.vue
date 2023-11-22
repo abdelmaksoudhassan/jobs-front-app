@@ -71,6 +71,7 @@ import { ref } from 'vue'
 import { err_Msg } from '../helpers/functions'
 import moment from 'moment'
 import { useAuthStore } from '../stores/UseAuthStore'
+import { get_url } from '../helpers/functions'
 export default{
     setup () {
         const loading = ref(false)
@@ -80,10 +81,7 @@ export default{
             user,
             extraData,
             loading,
-            get_url(avatar){
-              const url = 'https://nodejs-jobs.onrender.com'
-              return avatar ? `${url}/${avatar}` : "https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png"
-            }
+            get_url
         }
     },
     computed:{

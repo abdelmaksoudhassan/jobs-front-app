@@ -28,6 +28,9 @@ export default{
       console.log(err)
     }
   },
+  mounted(){
+    alert('To login as admin use Email: \'main_admin@gmail.com\' and Password: \'12345678\' ')
+  },
   methods:{
     ...mapActions(useAuthStore,['setAuthData','setExtraData'])
   }
