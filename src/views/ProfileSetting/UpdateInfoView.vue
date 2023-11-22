@@ -23,7 +23,7 @@
           label="First name *"
           hint="First Name"
           lazy-rules
-          :rules="[val => val && isValidLength(3,20,val) || 'Invalid Name length (3-20)']"
+          :rules="[val => val && isValidLength(3,25,val) || 'Invalid Name length (3-25)']"
         />
         </div>
         <div class="col-12 col-sm-5">
@@ -33,7 +33,7 @@
             label="Last name *"
             hint="Last Name"
             lazy-rules
-            :rules="[val => val && isValidLength(3,20,val) || 'Invalid Name length (3-20)']"
+            :rules="[val => val && isValidLength(3,25,val) || 'Invalid Name length (3-25)']"
           />
         </div>
       </div>
