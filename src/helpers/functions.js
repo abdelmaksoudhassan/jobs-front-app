@@ -29,6 +29,6 @@ export function err_Msg(){
 }
 
 export function get_url(avatar){
-    const url = 'https://nodejs-jobs.onrender.com'
+    const url = 'https://nodejs-jobs-5qdy.onrender.com'
     return avatar ? `${url}/${avatar}` : "https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png"
 }
