@@ -3,7 +3,7 @@ import {getSession} from './functions'
 
 export default ({ requiresAuth = false } = {}) => {
     const options = {};
-    options.baseURL = 'https://nodejs-jobs.onrender.com';
+    options.baseURL = 'https://nodejs-jobs-5qdy.onrender.com';
 
     const instance = axios.create(options);
 
