@@ -117,7 +117,7 @@ export default{
             this.$router.back()
         },
         downloadCV(cv){
-            const url = 'https://nodejs-jobs.onrender.com'
+            const url = 'https://nodejs-jobs-5qdy.onrender.com'
             window.open(`${url}/${cv}`, "_blank");
         },
         onComplete(){
